@@ -1,0 +1,25 @@
+//colors
+$wh: #ffffff;
+$bl: #444444;
+
+//size
+$s14: 14px;
+$s16: 16px;
+$s18: 18px;
+$s22: 22px;
+$s28: 28px;
+
+$sp: 480;
+$tablet: 960;
+@mixin media($size) {
+   @if $size == $sp{
+    @media all and (max-width: $sp + 'px') {
+       @content;
+    }
+  }
+  @if $size == $tablet {
+     @media all and (max-width: $tablet + 'px'){
+      @content;
+    }
+  }
+}
