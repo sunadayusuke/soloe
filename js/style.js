@@ -21,7 +21,7 @@ $(function() {
   $(window).on('load', function() {
 
     // fade-in
-    $(window).on.("scroll",function() {
+    $(window).on("scroll", function() {
       $('.container__item').each(function() {
         var POS = $(this).offset().top; //fade-inがついている要素の位置
         var scroll = $(window).scrollTop(); //スクロール一
