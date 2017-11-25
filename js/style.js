@@ -83,15 +83,15 @@ $(function() {
     // $(".header__link").css('margin-right', margin2 + 'px' );
     // $(".header__logo").css('margin-left', margin3 + 'px' );
     // $(".copy").css('margin-top', margin3 + 'px' );
-    if (count < 21) {
-      buttonRotate--;
-      buttonMargin += 2;
-      headerRotate += 0.5;
-      headerY -= 10;
-      headerX += 0.2;
-      logo -= 3;
-      footer--;
-      mainVisual -= 0.05;
+    if (count < 11) {
+      buttonRotate-= 2;
+      buttonMargin += 4;
+      headerRotate += 1;
+      headerY -= 20;
+      headerX += 0.4;
+      logo -= 6;
+      footer-= 2;
+      mainVisual -= 0.1;
       $(this).css({
         'transform': 'translateY(0%) translateX(-50%) rotate(' + buttonRotate + 'deg)',
         'margin-left': buttonMargin + "%"
@@ -109,23 +109,23 @@ $(function() {
         'transform': 'rotateZ(' + mainVisual + 'deg)'
       });
     }
-    if (count == 6) {
+    if (count == 3) {
       $(".randomButton").css({
         'text-decoration': 'none',
         'border-style': 'none',
         'background-color': '#fff'
       });
-    } else if (count == 11) {
+    } else if (count == 5) {
       $(".randomButton").css({
         'outline': 'none',
         'border': '2px solid #444'
       });
-    } else if (count == 16) {
+    } else if (count == 7) {
       $(".randomButton").css({
         'padding': '6px 16px'
       });
 
-    } else if (count == 21) {
+    } else if (count == 11) {
       $(".randomButton").css({
       'border-radius': '6px'
       });

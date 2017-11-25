@@ -193,7 +193,7 @@ body {
 }
 
 .about__text--negativeM {
-	margin-left: -12%;
+	margin-left: -1px;
 }
 
 .about__text:first-child {
